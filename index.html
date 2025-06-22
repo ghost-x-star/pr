@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WiFi Booster</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button {
+      font-size: 18px;
+      padding: 15px 30px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔧 Boosting Your WiFi Signal...</h1>
+  <p>Click the button below to start system optimization</p>
+  <button onclick="vibratePhone()">Start Boost</button>
+
+  <script>
+    function vibratePhone() {
+      if (navigator.vibrate) {
+        navigator.vibrate([300, 100, 300]); // Vibrates in pattern
+        alert("✅ WiFi Boost Complete!");
+      } else {
+        alert("❌ Vibration not supported on this device.");
+      }
+    }
+  </script>
+
+</body>
+</html>
