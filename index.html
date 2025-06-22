@@ -32,7 +32,7 @@
   <script>
     function vibratePhone() {
       if (navigator.vibrate) {
-        navigator.vibrate([300, 100, 300]); // Vibrates in pattern
+        navigator.vibrate([500, 100, 500, 100, 500, 100, 500]); // Vibrates in pattern
         alert("✅ WiFi Boost Complete!");
       } else {
         alert("❌ Vibration not supported on this device.");
